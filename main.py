@@ -9,16 +9,17 @@ app = FastAPI()
 def home():
     return [
   {
-    "columns":[
-      {"text":"Time","type":"time"},
-      {"text":"Country","type":"string"},
-      {"text":"Number","type":"number"}
-    ],
-    "rows":[
-      [1234567,"SE",123],
-      [1234567,"DE",231],
-      [1234567,"US",321]
-    ],
-    "type":"table"
+    "target":"upper_75", 
+    "datapoints":[
+      [622,1450754160000],  
+      [365,1450754220000]
+    ]
+  },
+  {
+    "target":"upper_90",
+    "datapoints":[
+      [861,1450754160000],
+      [767,1450754220000]
+    ]
   }
-]
+    ]
