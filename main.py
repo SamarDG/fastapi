@@ -9,9 +9,9 @@ app = FastAPI()
 def home():
     return [
   {
-    "target":"upper_75", // The field being queried for
+    "target":"upper_75", 
     "datapoints":[
-      [622,1450754160000],  // Metric value as a float , unixtimestamp in milliseconds
+      [622,1450754160000],  
       [365,1450754220000]
     ]
   },
