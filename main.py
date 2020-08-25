@@ -7,4 +7,18 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return { timezone: ‘browser’, panelId: 6, range: { from: ‘2018-02-23T04:14:50.889Z’, to: ‘2018-02-23T10:14:50.889Z’, raw: { from: ‘now-6h’, to: ‘now’ } }, rangeRaw: { from: ‘now-6h’, to: ‘now’ }, interval: ‘30s’, intervalMs: 30000, targets: [ { target: ‘’, refId: ‘A’, type: ‘timeserie’ } ], maxDataPoints: 755, scopedVars: { __interval: { text: ‘30s’, value: ‘30s’ }, __interval_ms: { text: 30000, value: 30000 } } }
+    return [
+  {
+    "columns":[
+      {"text":"Time","type":"time"},
+      {"text":"Country","type":"string"},
+      {"text":"Number","type":"number"}
+    ],
+    "rows":[
+      [1234567,"SE",123],
+      [1234567,"DE",231],
+      [1234567,"US",321]
+    ],
+    "type":"table"
+  }
+]
