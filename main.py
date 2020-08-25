@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {
+    return [{
   "type": "graph",
   "title": "pro json",
   "gridPos": {
@@ -112,4 +112,4 @@ def home():
   "stack": false,
   "percentage": false,
   "steppedLine": false
-}
+}]
