@@ -7,4 +7,4 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return [{"target": "my_metric", "datapoints": [[2, 1525320000000], [1, 1525320000000], [19, 1525320000000], [0, 1525320000000], [2, 1525665600000], [1, 1525665600000], [17, 1525665600000], [0, 1525665600000], [3, 1525838400000], [1, 1525838400000], [17, 1525838400000], [0, 1525838400000], [0, 1525838400000]]}]
+    return { timezone: ‘browser’, panelId: 6, range: { from: ‘2018-02-23T04:14:50.889Z’, to: ‘2018-02-23T10:14:50.889Z’, raw: { from: ‘now-6h’, to: ‘now’ } }, rangeRaw: { from: ‘now-6h’, to: ‘now’ }, interval: ‘30s’, intervalMs: 30000, targets: [ { target: ‘’, refId: ‘A’, type: ‘timeserie’ } ], maxDataPoints: 755, scopedVars: { __interval: { text: ‘30s’, value: ‘30s’ }, __interval_ms: { text: 30000, value: 30000 } } }
