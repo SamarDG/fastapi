@@ -322,7 +322,7 @@ def new_func(name):
         print(exc_type)
         print(fname)
         print(exc_tb.tb_lineno)
-        return e  
+        return error_message_time_format  
     return url_input
 
 #http://127.0.0.1:5000/query/?url=https://google.com
